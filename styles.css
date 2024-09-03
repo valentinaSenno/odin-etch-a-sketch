@@ -25,8 +25,8 @@ body {
 .square {
     border: 1px solid #949BA0;
     background-color: white;
-    flex: 0 0 calc(100% / 16); /* Calcola la larghezza per 16 colonne */
-    height: calc(100% / 16); /* Calcola l'altezza per 16 righe */
+    flex: 0 0 calc(100% / var(--cols));
+    height: calc(100% / var(--rows));
 }
 
 .square.active {
