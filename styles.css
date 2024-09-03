@@ -24,3 +24,7 @@ body {
     flex: 0 0 calc(100% / 16); /* Calcola la larghezza per 16 colonne */
     height: calc(100% / 16); /* Calcola l'altezza per 16 righe */
 }
+
+.square.active {
+    background-color: black;
+}

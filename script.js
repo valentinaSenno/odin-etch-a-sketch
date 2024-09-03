@@ -9,3 +9,14 @@ for (let i = 0; i < 256; i++) {
 
 }
 createDivs();
+
+const squares = document.querySelectorAll(".square");
+squares.forEach(square => {
+    square.addEventListener('mouseover', () => {
+        square.classList.add('active'); 
+    });
+
+    square.addEventListener('mouseout', () => {
+        
+    });
+});
