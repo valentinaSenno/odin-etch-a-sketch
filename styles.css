@@ -1,0 +1,26 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vmin; 
+    height: 80vmin; 
+    
+}
+
+.square {
+    border: 1px solid black;
+    flex: 0 0 calc(100% / 16); /* Calcola la larghezza per 16 colonne */
+    height: calc(100% / 16); /* Calcola l'altezza per 16 righe */
+}
