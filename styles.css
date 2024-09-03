@@ -1,6 +1,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: monospace;
 }
 
 body {
@@ -9,6 +10,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    flex-direction: column;
+    background-color: #BCD4DE;
 }
 
 .container {
@@ -20,11 +23,26 @@ body {
 }
 
 .square {
-    border: 1px solid black;
+    border: 1px solid #949BA0;
+    background-color: white;
     flex: 0 0 calc(100% / 16); /* Calcola la larghezza per 16 colonne */
     height: calc(100% / 16); /* Calcola l'altezza per 16 righe */
 }
 
 .square.active {
     background-color: black;
+}
+
+#reset {
+    margin-bottom: 20px;
+    height: 30px;
+    width: 100px;
+    background-color: #949BA0;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#reset:hover {
+    font-weight: bold;
 }
